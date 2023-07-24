@@ -35,7 +35,7 @@ public class QuestionService {
 
     }
 
-    public ResponseEntity<String> addQuestion(Question question) {
+    public ResponseEntity<String> addQuestions(Question question) {
 
         questionRepository.save(question);
         return new ResponseEntity<>("Data has been sent Successfully...!", HttpStatus.CREATED);
